@@ -46,7 +46,13 @@ namespace SickRagify
 
 				var poster = client.Show.GetPoster (Show.TvdbId);
 
+				var posterViewController = (ShowDetailViewController)this.ViewControllers [0];
+				posterViewController.PosterImage = poster;
+
+
 				var seasons = client.Show.GetSeasons (Show.TvdbId);
+				var episodesVc = (EpisodesViewController)this.ViewControllers [1];
+				episodesVc.Seasons = seasons;
 			}
 		}
 

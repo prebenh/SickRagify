@@ -11,7 +11,15 @@ namespace SickRagify
 		{
 		}
 
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
 
+			this.poster.Image = new UIImage (NSData.FromArray (PosterImage));
+		}
+
+
+		public  byte[] PosterImage { get; set; }
 
 	}
 }

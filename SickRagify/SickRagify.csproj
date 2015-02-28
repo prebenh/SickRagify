@@ -123,6 +123,10 @@
     <Compile Include="ShowDetailViewController.designer.cs">
       <DependentUpon>ShowDetailViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="EpisodesViewController.cs" />
+    <Compile Include="EpisodesViewController.designer.cs">
+      <DependentUpon>EpisodesViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

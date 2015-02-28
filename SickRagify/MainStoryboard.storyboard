@@ -32,11 +32,11 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="jva-TP-8EN">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="92"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="92.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2pz-XF-uhl">
-                                            <rect key="frame" x="15" y="0.0" width="270" height="92"/>
+                                            <rect key="frame" x="16" y="0.0" width="269" height="92.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -65,7 +65,7 @@
         <!--Episodes-->
         <scene sceneID="d0j-Z6-hjG">
             <objects>
-                <viewController id="bAo-kS-x3Q" sceneMemberID="viewController">
+                <viewController id="bAo-kS-x3Q" sceneMemberID="viewController" customClass="EpisodesViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Jy-Gp-ldZ"/>
                         <viewControllerLayoutGuide type="bottom" id="EyA-7A-Z1r"/>
@@ -83,7 +83,7 @@
                                         <rect key="frame" x="0.0" y="22" width="319" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="38" tableViewCell="37">
-                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -92,7 +92,7 @@
                                         <rect key="frame" x="0.0" y="66" width="319" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="40" tableViewCell="39">
-                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -101,7 +101,7 @@
                                         <rect key="frame" x="0.0" y="110" width="319" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="42" tableViewCell="41">
-                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -111,7 +111,9 @@
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Episodes" id="WKS-8Q-NVa"/>
-                    <connections/>
+                    <connections>
+                        <outlet property="SeasonTable" destination="36" id="name-outlet-36"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLq-6v-Xs7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
