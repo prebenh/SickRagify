@@ -15,23 +15,7 @@ namespace SickRagify
 		DataSource dataSource;
 
 		public MasterViewController (IntPtr handle) : base (handle)
-		{
-			Title = NSBundle.MainBundle.LocalizedString ("Master", "Master");
-
-			// Custom initialization
-			//var client1 = new HttpClient ();
-			//var result = client1.GetAsync ("http://xamarindp.cloudapp.net:8081/api/bb489ffc84457f84ad3ffe8b54e76d49?cmd=sb.ping").Result;
-			//var content = result.Content.ReadAsStringAsync ().Result;
-
-
-			// Custom initialization
-	
-
-
-
-
-		
-		}
+		{}
 
 		void AddNewItem (object sender, EventArgs args)
 		{
@@ -110,7 +94,6 @@ namespace SickRagify
 				var show = objects [indexPath.Row];
 
 				cell.ImageView.Image = new UIImage (NSData.FromArray (show.Banner));
-				cell.TextLabel.Text = objects [indexPath.Row].ToString ();
 
 				return cell;
 			}
@@ -122,7 +105,7 @@ namespace SickRagify
 			public override bool CanEditRow (UITableView tableView, NSIndexPath indexPath)
 			{
 				// Return false if you do not want the specified item to be editable.
-				return true;
+				return false;
 			}
 
 			public override void CommitEditingStyle (UITableView tableView, UITableViewCellEditingStyle editingStyle, NSIndexPath indexPath)
@@ -157,9 +140,9 @@ namespace SickRagify
 		{
 			if (segue.Identifier == "showDetail") {
 				var indexPath = TableView.IndexPathForSelectedRow;
-				var item = dataSource.Objects [indexPath.Row];
+				var show = (Show) dataSource.Objects [indexPath.Row];
 
-				((DetailViewController)segue.DestinationViewController).SetDetailItem (item);
+				((ShowInfoViewController)segue.DestinationViewController).Show = show;
 			}
 		}
 	}

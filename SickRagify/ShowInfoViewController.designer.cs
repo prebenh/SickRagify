@@ -11,8 +11,8 @@ using System.CodeDom.Compiler;
 
 namespace SickRagify
 {
-	[Register ("MasterViewController")]
-	partial class MasterViewController
+	[Register ("ShowInfoViewController")]
+	partial class ShowInfoViewController
 	{
 		void ReleaseDesignerOutlets ()
 		{

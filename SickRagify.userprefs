@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="SickRagify/SickRagify.csproj">
+﻿<Properties StartupItem="SickRagify/SickRagify.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.7.1" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SickRagify/MasterViewController.cs">
     <Files>
