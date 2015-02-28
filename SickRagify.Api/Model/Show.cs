@@ -35,6 +35,8 @@ namespace SickRagify.Model
 
         public string Airs { get; set; }
 
+		public byte[] Banner { get; set; }
+
         public override string ToString()
         {
             return Name;

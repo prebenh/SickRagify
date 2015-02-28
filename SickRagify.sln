@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SickRagify", "SickRagify\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SickRagify.Api", "SickRagify.Api\SickRagify.Api.csproj", "{0D61DD6A-B067-4462-A491-0525A86251A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SickRagify.Android", "SickRagify.Android\SickRagify.Android.csproj", "{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -39,5 +41,17 @@ Global
 		{0D61DD6A-B067-4462-A491-0525A86251A2}.Release|iPhone.Build.0 = Release|Any CPU
 		{0D61DD6A-B067-4462-A491-0525A86251A2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{0D61DD6A-B067-4462-A491-0525A86251A2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Release|iPhone.Build.0 = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8CFF6202-6480-4A62-99F1-C2B17A22D7B3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

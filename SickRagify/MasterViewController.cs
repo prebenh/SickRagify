@@ -76,7 +76,14 @@ namespace SickRagify
 
 				var shows = client.Show.GetShows ();
 
-				objects.AddRange(shows);
+				foreach(var show in shows)
+				{
+					var banner = client.Show.GetBanner(show.TvdbId);
+					show.Banner = banner;
+					objects.Add(show);
+				}
+
+				//objects.AddRange(shows);
 			}
 
 			public IList<Show> Objects {
@@ -99,10 +106,18 @@ namespace SickRagify
 			{
 				var cell = (UITableViewCell)tableView.DequeueReusableCell (CellIdentifier, indexPath);
 
+
+				var show = objects [indexPath.Row];
+
+				cell.ImageView.Image = new UIImage (NSData.FromArray (show.Banner));
 				cell.TextLabel.Text = objects [indexPath.Row].ToString ();
 
 				return cell;
 			}
+
+
+
+
 
 			public override bool CanEditRow (UITableView tableView, NSIndexPath indexPath)
 			{
