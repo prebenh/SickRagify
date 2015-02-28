@@ -1,0 +1,11 @@
+mscorlib.dll
+System.dll
+System.Xml.dll
+System.Core.dll
+Mono.Dynamic.Interpreter.dll
+SickRagify.Api.dll
+System.Net.Http.dll
+Newtonsoft.Json.dll
+System.Runtime.Serialization.dll
+Microsoft.CSharp.dll
+Mono.CSharp.dll
