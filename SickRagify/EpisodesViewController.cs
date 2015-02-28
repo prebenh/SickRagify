@@ -37,7 +37,10 @@ namespace SickRagify
 		{
 			//var seasonNumber = _seasonList [section];
 
-			return string.Format ("Season {0}", section+1);
+			if(section == 0)
+				return "Specials";
+
+			return string.Format ("Season {0}", section);
 		}
 
 		public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
@@ -47,16 +50,18 @@ namespace SickRagify
 			if (cell == null)
 				cell = new UITableViewCell (UITableViewCellStyle.Default, "cell");
 
-			if (_seasonList [1].ContainsKey (indexPath.Row + 1)) {
-				cell.TextLabel.Text = _seasonList [1] [indexPath.Row + 1].Name;
+			if (_seasonList [indexPath.Section].ContainsKey (indexPath.Row + 1)) {
+				cell.TextLabel.Text = _seasonList [indexPath.Section] [indexPath.Row + 1].Name;
 			}
 
-				return cell;
+			return cell;
 		}
 
 		public override int RowsInSection (UITableView tableView, int section)
 		{
-			return _seasonList[1].Count;
+			if(_seasonList.ContainsKey(section))
+				return _seasonList[section].Count;
+			return 0;
 		}
 
 		public override int NumberOfSections (UITableView tableView)

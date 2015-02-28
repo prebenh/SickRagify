@@ -110,7 +110,7 @@
                             </tableView>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Episodes" id="WKS-8Q-NVa"/>
+                    <tabBarItem key="tabBarItem" title="Episodes" id="WKS-8Q-NVa" image="Images/list99.png"/>
                     <connections>
                         <outlet property="SeasonTable" destination="36" id="name-outlet-36"/>
                     </connections>
@@ -137,7 +137,7 @@
                             </imageView>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Show Info" id="lli-0w-wdZ"/>
+                    <tabBarItem key="tabBarItem" id="lli-0w-wdZ" title="Show Info" image="Images/screen54.png"/>
                     <connections>
                         <outlet property="poster" destination="45" id="name-outlet-45"/>
                     </connections>
@@ -174,5 +174,7 @@
     </simulatedMetricsContainer>
     <resources>
         <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="Images/list99.png" width="32" height="32"/>
+        <image name="Images/screen54.png" width="32" height="32"/>
     </resources>
 </document>

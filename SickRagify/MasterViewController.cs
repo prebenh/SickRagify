@@ -38,10 +38,10 @@ namespace SickRagify
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
-			NavigationItem.LeftBarButtonItem = EditButtonItem;
+			//NavigationItem.LeftBarButtonItem = EditButtonItem;
 
-			var addButton = new UIBarButtonItem (UIBarButtonSystemItem.Add, AddNewItem);
-			NavigationItem.RightBarButtonItem = addButton;
+			//var addButton = new UIBarButtonItem (UIBarButtonSystemItem.Add, AddNewItem);
+			//NavigationItem.RightBarButtonItem = addButton;
 
 			TableView.Source = dataSource = new DataSource (this);
 		}
