@@ -40,5 +40,6 @@ namespace SickRagify
 				Title = Show.ToString();
 			}
 		}
+
 	}
 }

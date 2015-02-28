@@ -1,18 +1,18 @@
 # Version: 8.6.1.26 (98ee412)
-# [first argument, ignore] # /Volumes/HD OSX/Users/Dries/Projects/prebenh/SickRagify/SickRagify/bin/iPhoneSimulator/Debug/mtouch.exe
+# [first argument, ignore] # /Users/preben/Documents/Git/SickRagify/SickRagify/bin/iPhoneSimulator/Debug/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.1.26/bin/mtouch-64 \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
-	"/Volumes/HD OSX/Users/Dries/Projects/prebenh/SickRagify/SickRagify/obj/iPhoneSimulator/Debug/mtouch-cache" \
+	/Users/preben/Documents/Git/SickRagify/SickRagify/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--executable \
 	SickRagify \
 	--nomanifest \
 	--nosign \
 	-sim \
-	"/Volumes/HD OSX/Users/Dries/Projects/prebenh/SickRagify/SickRagify/bin/iPhoneSimulator/Debug/SickRagify.app" \
+	/Users/preben/Documents/Git/SickRagify/SickRagify/bin/iPhoneSimulator/Debug/SickRagify.app \
 	-r \
-	"/Volumes/HD OSX/Users/Dries/Projects/prebenh/SickRagify/SickRagify.Api/bin/Debug/SickRagify.Api.dll" \
+	/Users/preben/Documents/Git/SickRagify/SickRagify.Api/bin/Debug/SickRagify.Api.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
 	-r \
@@ -22,14 +22,14 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
 	-r \
-	"/Volumes/HD OSX/Users/Dries/Projects/prebenh/SickRagify/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll" \
+	/Users/preben/Documents/Git/SickRagify/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Net.Http.dll \
 	-debug \
 	-nolink \
 	-sdk \
-	8.1 \
+	7.1 \
 	-targetver \
 	7.0 \
 	--abi=i386 \
-	"/Volumes/HD OSX/Users/Dries/Projects/prebenh/SickRagify/SickRagify/bin/iPhoneSimulator/Debug/SickRagify.exe" \
+	/Users/preben/Documents/Git/SickRagify/SickRagify/bin/iPhoneSimulator/Debug/SickRagify.exe \
