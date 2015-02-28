@@ -3,6 +3,7 @@ using MonoTouch.UIKit;
 using System;
 using System.CodeDom.Compiler;
 using SickRagify.Model;
+using SickRagify;
 
 namespace SickRagify
 {
@@ -38,6 +39,14 @@ namespace SickRagify
 			if (Show != null) 
 			{
 				Title = Show.ToString();
+
+
+
+				var client = new Client ("http://xamarindp.cloudapp.net:8081/", "bb489ffc84457f84ad3ffe8b54e76d49");
+
+				var poster = client.Show.GetPoster (Show.TvdbId);
+
+				var seasons = client.Show.GetSeasons (Show.TvdbId);
 			}
 		}
 

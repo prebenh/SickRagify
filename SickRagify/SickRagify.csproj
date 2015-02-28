@@ -119,6 +119,10 @@
     <Compile Include="ShowInfoViewController.designer.cs">
       <DependentUpon>ShowInfoViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowDetailViewController.cs" />
+    <Compile Include="ShowDetailViewController.designer.cs">
+      <DependentUpon>ShowDetailViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
